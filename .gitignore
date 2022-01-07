@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.Xresources
+!.config
+.config/*
+!.config/i3
+
+
