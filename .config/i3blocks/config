@@ -1,0 +1,21 @@
+[time]
+label=  
+command=echo "`date +'%a %d %b'` <b>`date +'%T'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+interval=1
+markup=pango
+border=#928374
+separator_block_width=0
+
+
+[battery2]
+command=~/.config/i3blocks/scripts/battery2/battery2
+markup=pango
+interval=30
+
+[brightness]
+label=  
+command=echo $(printf "%.0f " $(xbacklight -get))
+interval=10
+signal=2
+border=#d79921
+
